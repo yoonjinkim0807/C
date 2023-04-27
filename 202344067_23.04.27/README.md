@@ -290,4 +290,5 @@ int main(void)
 	
 	p/=100;
 	result=x*p-z;
+	printf("산출세액: %d",result);
 }
