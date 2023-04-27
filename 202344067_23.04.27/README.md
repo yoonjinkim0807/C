@@ -292,3 +292,21 @@ int main(void)
 	result=x*p-z;
 	printf("산출세액: %d",result);
 }
+==========================================================
+6주차 교안 14페이지 예제#1 구구단 출력 프로그램
+#include <stdio.h>
+
+int main(void)
+{
+	int n, i=1;
+	
+	printf("출력하고 싶은 단을 입력하시오:")
+	scanf("%d",&n);
+	
+	while(i<=9)
+	{
+		printf("%d*%d"=%d,n,i,n*i);
+	}
+	return 0;
+
+}
