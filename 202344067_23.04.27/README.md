@@ -1,4 +1,4 @@
-2주차 교안 84페이지
+2주차 교안 84페이지 lab 사칙연산
 #include <stdio.h>
 
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
     return 0;
 }
 ==========================================================
-2주차 교안 97페이지
+2주차 교안 97페이지 덧셈 프로그램
 #include <stdio.h>
 
 int main(void)
@@ -30,7 +30,7 @@ int main(void)
     return 0;
 }
 ==========================================================
-2주차 교안 99페이지
+2주차 교안 99페이지 원의 면적 계산 프로그램
 #include <stdio.h>
 
 int main(void)
@@ -44,7 +44,7 @@ int main(void)
 }
 }
 ==========================================================
-2주차 교안 101페이지
+2주차 교안 101페이지 환율 계산 
 #include <stdio.h>
 
 int main(void)
@@ -64,7 +64,7 @@ int main(void)
 }
 
 ==========================================================
-2주차 교안 103페이지
+2주차 교안 103페이지 평균 계산기 
 #include <stdio.h>
 
 int main(void)
@@ -82,7 +82,7 @@ int main(void)
   return 0;
 }
 ==========================================================
-2주차 교안 105페이지 mini project
+2주차 교안 105페이지 mini project 사각형의 둘레와 면적
 #include <stdio.h>
 
 int main(void)
@@ -98,7 +98,7 @@ int main(void)
 	return 0;
 }
 ==========================================================
-3주차 교안 134페이지 mini project
+3주차 교안 134페이지 mini project 태양빛 도달 시간
 #include <stdio.h>
 
 int main(void)
@@ -114,7 +114,7 @@ int main(void)
 	return 0;
 }
 ==========================================================
-4주차 교안 42페이지 lab
+4주차 교안 42페이지 lab 거스름돈 계산기
 #include <stdio.h>
 
 int main(void)
@@ -137,7 +137,7 @@ int main(void)
     return 0;
 }
 ==========================================================
-4주차 교안 76페이지 lab
+4주차 교안 76페이지 lab 윤년
 #include <stdio.h>
 
 int main(void)
@@ -154,7 +154,7 @@ int main(void)
 
 
 ==========================================================
-4주차 교안 122페이지 mini project
+4주차 교안 122페이지 mini project 화씨 온도를 섭씨로 바꾸기
 #inclue <stdio.h>
 
 int main(void)
@@ -170,7 +170,7 @@ int main(void)
 	return 0;
 }
 ==========================================================
-5주주차 교안 64페이지 lab
+5주주차 교안 64페이지 lab 이차 방정식
 #include <stdio.h>
 #include <math.h>
 
@@ -201,4 +201,93 @@ int main(void)
 	return 0;
 }
 ==========================================================
-5주차 교안 64페이지 lab
+5주차 교안 68페이지 lab 산술 계산기
+#include <stdio.h>
+
+int main(void)
+{
+	int x,y,result=0;
+	char t;
+	
+	printf("수식을 입력하시오(예 2 + 5) >>");
+	scanf("%d %c %d",x,t,y);
+	
+	if(t=='+')
+	{
+		result=x+y;
+	}
+	else if(t=='-')
+	{
+		result=x-y;
+	}
+	else if(t=='*')
+	{
+		result=x*y;
+	}
+	else if(t=='/')
+	{
+		result=x/y;
+	}
+	else
+	{
+		printf("수식이 올바르지 않습니다.");
+	}
+	printf("%d %c %d = %d",x,t,y,result);
+	return 0;
+}
+==========================================================
+5주차 교안 85페이지 lab 산술 계산기 switch 버전
+#include <stdio.h>
+
+int main(void)
+{
+	int x,y,result=0;
+	char t
+	
+	printf("수식을 입력하세요(예:2 + 5) >>");
+	scanf("%d %c %d",x,t,y);
+	
+	switch(t)
+		{
+		case '+':
+			result=x+y;
+			printf("%d %c %d = %d",x,t,y,result);
+			break;
+		case '-':
+			result=x-y;
+			printf("%d %c %d = %d",x,t,y,result);
+			break;
+		case '*':
+			result=x*y;
+			printf("%d %c %d = %d",x,t,y,result);
+			break;		
+		case '/':
+			result=x/y;
+			printf("%d %c %d = %d",x,t,y,result);
+			break;
+		default:
+			printf("수식이 올바르지 않습니다.");
+		}
+	return 0;
+}
+==========================================================
+5주차 교안 92페이지 mini project 소득세 계산기 만들기
+#include <stdio.h>
+
+int main(void)
+{
+	int x,y,z,p,result=0; // x 과세표준, y (공제전) 소득세, p 소득세율, z 누진공제액
+	
+	printf(과세표준을 입력하세요:);
+	scanf("%d",x);
+	printf(소득세율를 입력하세요:);
+	scanf("%d",p);
+	printf(소득세을 입력하세요:);
+	scanf("%d",y);
+	printf(누진공세액을 입력하세요:);
+	scanf("%d",z);
+	
+	
+	p/=100;
+	result=x*p-z;
+}
